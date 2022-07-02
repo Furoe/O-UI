@@ -1,0 +1,4 @@
+packages: 
+  - 'packages/*' # 组件
+  - 'play' # 测试编写组件
+  - 'docs' # 文档
