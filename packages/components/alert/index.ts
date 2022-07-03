@@ -1,0 +1,1 @@
+import { withInstall } from "@o-ui/utils";

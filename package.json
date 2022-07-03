@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@7.3.0",
+  "packageManager": "pnpm@7.5.0",
   "workspaces": [
     "packages/*",
     "play",
@@ -10,7 +10,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "pnpm run -C docs dev",
+    "docs:build": "pnpm run -C docs build",
+    "docs:server": "pnpm run -C docs server",
+    "docs:gen-locales": "pnpm run -C docs gen-locales",
+    "docs:crowdin-credentials": "pnpm run -C docs crowdin-credentials"
   },
   "keywords": [],
   "author": "",
@@ -23,5 +28,9 @@
         "react-dom"
       ]
     }
+  },
+  "devDependencies": {
+    "root": "^3.2.0",
+    "unplugin-vue-define-options": "^0.6.1"
   }
 }
